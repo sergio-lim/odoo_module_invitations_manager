@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_management_invitation_form" model="ir.ui.view">
+            <field name="name">management.invitation.form</field>
+            <field name="model">management.invitation</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                            <field name="name"/>
+                            <field name="plus_ones"/>
+                            <field name="age"/>
+                        </group>
+                        <group>
+                            <field name="gender"/>
+                            <field name="is_vip"/>
+                        </group>
+                        </group>
+                        
+                    </sheet>
+
+                </form>
+            </field>
+        </record>
+
+    <record id="action_management_invitation" model="ir.actions.act_window">
+        <field name="name">Invitations</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">management.invitation</field>
+        <field name="view_mode">tree,kanban,form,pivot,activity</field>
+      
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new invitation!
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_guest"
+        name="Guest"
+        action="action_management_invitation"
+        parent="invitations_management_guest_master"
+        sequence="0"/>
+</odoo>

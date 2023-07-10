@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem id="invitations_management_menu"
+        name="Invitations Management"
+        sequence="0"/>
+
+    <menuitem id="invitations_management_guest_master"
+        name="Guest Management"
+        parent="invitations_management_menu"
+        sequence="0"/>
+            
+    
+</odoo>
