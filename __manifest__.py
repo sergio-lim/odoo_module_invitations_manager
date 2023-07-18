@@ -2,7 +2,7 @@
     'name': 'Invitations management',
     'category': 'Management',
     'version': '1.0.0',
-    'sequence': -100,
+    'sequence': -90,
     'summary': 'Centralize your invitations',
     'description': """
 To do...

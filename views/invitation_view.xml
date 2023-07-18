@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+    <record id="view_management_invitation_tree" model="ir.ui.view">
+            <field name="name">management.invitation.tree</field>
+            <field name="model">management.invitation</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" string="Guest Name"/>
+                    <field name="is_vip" string="Es VIP"/>
+                    <field name="plus_ones" string="Plus Ones"/>
+                </tree>
+            </field>
+        </record>
+
     <record id="view_management_invitation_form" model="ir.ui.view">
             <field name="name">management.invitation.form</field>
             <field name="model">management.invitation</field>

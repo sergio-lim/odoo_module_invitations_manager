@@ -3,12 +3,12 @@
 
     <menuitem id="invitations_management_menu"
         name="Invitations Management"
-        sequence="0"/>
+        sequence="1"/>
 
     <menuitem id="invitations_management_guest_master"
         name="Guest Management"
         parent="invitations_management_menu"
-        sequence="0"/>
+        sequence="1"/>
             
     
 </odoo>
